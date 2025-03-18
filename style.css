@@ -1,0 +1,88 @@
+.background{
+    background-color: antiquewhite;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default: 2 columns */
+    gap: 10px;
+    width: 100vw;
+    padding: 100px 20px; /* Adjust padding */
+}
+.container-resume{
+    max-width: 1200px;
+}
+.album {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    text-align: center;       /* Centers text inside */
+    height: 100vh;         /* Ensures the container takes full height of the viewport */
+
+}
+.col1{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-end ; 
+}
+.col2{
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.col3{
+    text-align: center;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+
+
+}
+.project-text{
+    text-align: center;
+    gap: 1rem;
+}
+h2{
+    font-size: 3rem;
+}
+.feature{
+    align-content: center;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .project {
+      padding: 30px; /* Reduce padding for smaller screens */
+    }
+  
+    .project-text h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .project-text p {
+      font-size: 16px; /* Adjust paragraph size */
+    }
+    .album {
+        height: auto; /* Adjust height so content isn't cut off */
+        padding: 20px; /* Add some spacing */
+    }
+    .container {
+        grid-template-columns: 1fr; /* Switch to a single column */
+        gap: 20px; /* Increase gap for better spacing */
+        padding: 50px 10px; /* Reduce padding */
+    }
+}
